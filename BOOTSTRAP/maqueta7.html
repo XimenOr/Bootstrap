@@ -1,0 +1,863 @@
+<!--
+    ENTIDAD: Centro de Biotecnologia Agropecuaria
+    FICHA: 2558346
+    PROGRAMO: Analisis y Desarrollo de Software - ADSO
+    AUTOR: Ivonne Ortiz
+    OBJETIVO: Uso de Bootstrap
+    FICHA CREACION:19 de Agosto del 2022
+    FECHA DE MODIFICACION:25 de Agosto del 2022
+    VALIDADO EN: W3C
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/maqueta7.css">
+    <title>Maqueta7</title>
+</head>
+
+<body id="cuerpo">
+    <div class="container">
+        <div class="row col-12">
+            <div class="col-12 col-6 col-md-8 col-lg-8">
+                <img src="./img/intro1.jpg" class="img-thumbnail">
+            </div>
+            <div class=" col-12 col-6 col-md-4 col-lg-4">
+                <img src="./img/intro2.jpg" class="img-thumbnail" id="items">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row col-12">
+            <div class="col-12 col-6 col-md-4 col-lg-4">
+                <img src="./img/intro3.jpg" class="img-thumbnail">
+            </div>
+            <div class="col-12 col-6 col-md-4 col-lg-4">
+                <img src="./img/intro4.jpg" class="img-thumbnail">
+            </div>
+            <div class="col-12 col-6 col-md-4 col-lg-4">
+                <img src="./img/intro5.jpg" class="img-thumbnail">
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center">
+        <div class="row col-12">
+            <div id="col1">
+                <h1>Productos</h1>
+            </div>
+        </div>
+
+        <div class="row col-12">
+            <div class="col-6 col-md-2 col-lg-2">
+                <div class="card" style="width: 12rem;">
+                    <img src="./img/monitoresintrauditivos.jpg" class="img-thumbnail" id="img2">
+                    <div class="card-body">
+                        <h5 class="card-title" id="text1">Monitores Intrauditivos</h5>
+                        <p class="card-text" id="text1">$50.000</p>
+                        <form>
+                            <p class="clasificacion">
+                                <input id="radio1" type="radio" name="estrellas" value="5">
+                                <label for="radio1">★</label>
+                                <input id="radio2" type="radio" name="estrellas" value="4">
+                                <label for="radio2">★</label>
+                                <input id="radio3" type="radio" name="estrellas" value="3">
+                                <label for="radio3">★</label>
+                                <input id="radio4" type="radio" name="estrellas" value="2">
+                                <label for="radio4">★</label>
+                                <input id="radio5" type="radio" name="estrellas" value="1">
+                                <label for="radio5">★</label>
+                            </p>
+                        </form>
+
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal" id="text1">
+                            Ver
+                        </button>
+
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="text1">Monitores Intrauditivos</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="./img/monitoresintrauditivos.jpg" class="img-thumbnail" id="img1">
+                                        <p id="text1">Monitores Intrauditivos</p>
+                                        <p id="text1">$50.000</p>
+                                        <label for="Color">Color</label>
+                                        <select id="Color" name="Color">
+                                            <option value="1">Violeta</option>
+                                            <option value="2">Negro</option>
+                                            <option value="3">Blanco</option>
+                                        </select>
+                                        <label for="Cantidad">Cantidad</label>
+                                        <select id="Cantidad" name="Cantidad">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="2">4</option>
+                                            <option value="3">5</option>
+                                        </select>
+
+                                        <button type="button" class="btn btn-primary" id="text1">Añadir al
+                                            carrito</button>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                            id="text1">Cerrar</button>
+                                        <button type="button" class="btn btn-primary" id="text1">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-2 col-lg-2">
+                <div class="card" style="width: 12rem;">
+                    <img src="./img/microazul.jpg" class="img-thumbnail" id="img2">
+                    <div class="card-body">
+                        <h5 class="card-title" id="text1">Microfono Azul Winter</h5>
+                        <p class="card-text" id="text1">$80.000</p>
+                        <form>
+                            <p class="clasificacion">
+                                <input id="radio1" type="radio" name="estrellas" value="5">
+                                <label for="radio1">★</label>
+                                <input id="radio2" type="radio" name="estrellas" value="4">
+                                <label for="radio2">★</label>
+                                <input id="radio3" type="radio" name="estrellas" value="3">
+                                <label for="radio3">★</label>
+                                <input id="radio4" type="radio" name="estrellas" value="2">
+                                <label for="radio4">★</label>
+                                <input id="radio5" type="radio" name="estrellas" value="1">
+                                <label for="radio5">★</label>
+                            </p>
+                        </form>
+
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal2" id="text1">
+                            Ver
+                        </button>
+
+                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="text1">Microfono Azul Winter</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="./img/microazul.jpg" class="img-thumbnail" id="img1">
+                                        <p id="text1">Microfono Azul Winter</p>
+                                        <p id="text1">$80.000</p>
+                                        <label for="Cantidad">Cantidad</label>
+                                        <select id="Cantidad" name="Cantidad">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="2">4</option>
+                                            <option value="3">5</option>
+                                        </select>
+
+                                        <button type="button" class="btn btn-primary" id="text1">Añadir al
+                                            carrito</button>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                            id="text1">Cerrar</button>
+                                        <button type="button" class="btn btn-primary" id="text1">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-2 col-lg-2">
+                <div class="card" style="width: 12rem;">
+                    <img src="./img/guitarra.jpg" class="img-thumbnail" id="img2">
+                    <div class="card-body">
+                        <h5 class="card-title" id="text1">Guitarra Transparente</h5>
+                        <p class="card-text" id="text1">$400.000</p>
+                        <form>
+                            <p class="clasificacion">
+                                <input id="radio1" type="radio" name="estrellas" value="5">
+                                <label for="radio1">★</label>
+                                <input id="radio2" type="radio" name="estrellas" value="4">
+                                <label for="radio2">★</label>
+                                <input id="radio3" type="radio" name="estrellas" value="3">
+                                <label for="radio3">★</label>
+                                <input id="radio4" type="radio" name="estrellas" value="2">
+                                <label for="radio4">★</label>
+                                <input id="radio5" type="radio" name="estrellas" value="1">
+                                <label for="radio5">★</label>
+                            </p>
+                        </form>
+
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal3" id="text1">
+                            Ver
+                        </button>
+
+                        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="text1">Guitarra Transparentel</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="./img/guitarra.jpg" class="img-thumbnail" id="img1">
+                                        <p id="text1">Guitarra Transparente</p>
+                                        <p id="text1">$400.000</p>
+                                        <label for="Color">Color</label>
+                                        <select id="Color" name="Color">
+                                            <option value="1">Azul</option>
+                                            <option value="2">Negro</option>
+                                            <option value="3">Morado</option>
+                                        </select>
+                                        <label for="Cantidad">Cantidad</label>
+                                        <select id="Cantidad" name="Cantidad">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="2">4</option>
+                                            <option value="3">5</option>
+                                        </select>
+                                        <button type="button" class="btn btn-primary" id="text1">Añadir al
+                                            carrito</button>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                            id="text1">Cerrar</button>
+                                        <button type="button" class="btn btn-primary" id="text1">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-2 col-lg-2">
+                <div class="card" style="width: 12rem;">
+                    <img src="./img/seventeenlightstick.jpg" class="img-thumbnail" id="img2">
+                    <div class="card-body">
+                        <h5 class="card-title" id="text1">Seventeen Lightstick Ver.1</h5>
+                        <p class="card-text" id="text1">$180.000</p>
+                        <form>
+                            <p class="clasificacion">
+                                <input id="radio1" type="radio" name="estrellas" value="5">
+                                <label for="radio1">★</label>
+                                <input id="radio2" type="radio" name="estrellas" value="4">
+                                <label for="radio2">★</label>
+                                <input id="radio3" type="radio" name="estrellas" value="3">
+                                <label for="radio3">★</label>
+                                <input id="radio4" type="radio" name="estrellas" value="2">
+                                <label for="radio4">★</label>
+                                <input id="radio5" type="radio" name="estrellas" value="1">
+                                <label for="radio5">★</label>
+                            </p>
+                        </form>
+
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal4" id="text1">
+                            Ver
+                        </button>
+
+                        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="text1">Seventeen Lightstick Ver.1</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="./img/seventeenlightstick.jpg" class="img-thumbnail" id="img1">
+                                        <p id="text1">Seventeen Lightstick Ver.1</p>
+                                        <p id="text1">$180.000</p>
+                                        <label for="Cantidad">Cantidad</label>
+                                        <select id="Cantidad" name="Cantidad">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="2">4</option>
+                                            <option value="3">5</option>
+                                        </select>
+                                        <button type="button" class="btn btn-primary" id="text1">Añadir al
+                                            carrito</button>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                            id="text1">Cerrar</button>
+                                        <button type="button" class="btn btn-primary" id="text1">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-2 col-lg-2">
+                <div class="card" style="width: 12rem;">
+                    <img src="./img/bateria.jpg" class="img-thumbnail" id="img2">
+                    <div class="card-body">
+                        <h5 class="card-title" id="text1">Bateria De Percecusión</h5>
+                        <p class="card-text" id="text1">$900.000</p>
+                        <form>
+                            <p class="clasificacion">
+                                <input id="radio1" type="radio" name="estrellas" value="5">
+                                <label for="radio1">★</label>
+                                <input id="radio2" type="radio" name="estrellas" value="4">
+                                <label for="radio2">★</label>
+                                <input id="radio3" type="radio" name="estrellas" value="3">
+                                <label for="radio3">★</label>
+                                <input id="radio4" type="radio" name="estrellas" value="2">
+                                <label for="radio4">★</label>
+                                <input id="radio5" type="radio" name="estrellas" value="1">
+                                <label for="radio5">★</label>
+                            </p>
+                        </form>
+
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal4" id="text1">
+                            Ver
+                        </button>
+
+                        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="text1">Bateria De Percecusión</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="./img/bateria.jpg" class="img-thumbnail" id="img1">
+                                        <p id="text1">Bateria De Percecusión</p>
+                                        <p id="text1">$900.000</p>
+                                        <label for="Cantidad">Cantidad</label>
+                                        <select id="Cantidad" name="Cantidad">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="2">4</option>
+                                            <option value="3">5</option>
+                                        </select>
+                                        <button type="button" class="btn btn-primary" id="text1">Añadir al
+                                            carrito</button>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                            id="text1">Cerrar</button>
+                                        <button type="button" class="btn btn-primary" id="text1">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-2 col-lg-2">
+                <div class="card" style="width: 12rem;">
+                    <img src="./img/picks.jpg" class="img-thumbnail" id="img2">
+                    <div class="card-body">
+                        <h5 class="card-title" id="text1">Picks Guitarra Floral Acrilico</h5>
+                        <p class="card-text" id="text1">$45.000</p>
+                        <form>
+                            <p class="clasificacion">
+                                <input id="radio1" type="radio" name="estrellas" value="5">
+                                <label for="radio1">★</label>
+                                <input id="radio2" type="radio" name="estrellas" value="4">
+                                <label for="radio2">★</label>
+                                <input id="radio3" type="radio" name="estrellas" value="3">
+                                <label for="radio3">★</label>
+                                <input id="radio4" type="radio" name="estrellas" value="2">
+                                <label for="radio4">★</label>
+                                <input id="radio5" type="radio" name="estrellas" value="1">
+                                <label for="radio5">★</label>
+                            </p>
+                        </form>
+
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal5" id="text1">
+                            Ver
+                        </button>
+
+                        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="text1">Picks Guitarra Floral Acrilico</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="./img/picks.jpg" class="img-thumbnail" id="img1">
+                                        <p id="text1">Picks Guitarra Floral Acrilico</p>
+                                        <p id="text1">$45.000</p>
+                                        <label for="modelo">Modelo</label>
+                                        <select id="modelo" name="modelo">
+                                            <option value="1">Girasol</option>
+                                            <option value="2">Rosa</option>
+                                            <option value="3">Lavanda</option>
+                                            <option value="2">Tulipan</option>
+                                            <option value="3">Orquidea</option>
+                                            <option value="2">Jazmin</option>
+                                            <option value="3">Ixora</option>
+                                        </select>
+                                        <label for="Cantidad">Cantidad</label>
+                                        <select id="Cantidad" name="Cantidad">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="2">4</option>
+                                            <option value="3">5</option>
+                                        </select>
+                                        <button type="button" class="btn btn-primary" id="text1">Añadir al
+                                            carrito</button>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                            id="text1">Cerrar</button>
+                                        <button type="button" class="btn btn-primary" id="text1">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row col-12 g-2">
+            <div class="col-6 col-md-2 col-lg-2">
+                <div class="card" style="width: 12rem;">
+                    <img src="./img/enhypenlightstick.jpg" class="img-thumbnail" id="img2">
+                    <div class="card-body">
+                        <h5 class="card-title" id="text1">Enhypen Lightstick Ver.1</h5>
+                        <p class="card-text" id="text1">$280.000</p>
+                        <form>
+                            <p class="clasificacion">
+                                <input id="radio1" type="radio" name="estrellas" value="5">
+                                <label for="radio1">★</label>
+                                <input id="radio2" type="radio" name="estrellas" value="4">
+                                <label for="radio2">★</label>
+                                <input id="radio3" type="radio" name="estrellas" value="3">
+                                <label for="radio3">★</label>
+                                <input id="radio4" type="radio" name="estrellas" value="2">
+                                <label for="radio4">★</label>
+                                <input id="radio5" type="radio" name="estrellas" value="1">
+                                <label for="radio5">★</label>
+                            </p>
+                        </form>
+
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal6" id="text1">
+                            Ver
+                        </button>
+
+                        <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel6"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="text1">Enhypen Lightstick Ver.1</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="./img/enhypenlightstick.jpg" class="img-thumbnail" id="img1">
+                                        <p id="text1">Enhypen Lightstick Ver.1</p>
+                                        <p id="text1">$280.000</p>
+                                        <label for="Cantidad">Cantidad</label>
+                                        <select id="Cantidad" name="Cantidad">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="2">4</option>
+                                            <option value="3">5</option>
+                                        </select>
+                                        <button type="button" class="btn btn-primary" id="text1">Añadir al
+                                            carrito</button>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                            id="text1">Cerrar</button>
+                                        <button type="button" class="btn btn-primary" id="text1">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-2 col-lg-2">
+                <div class="card" style="width: 12rem;">
+                    <img src="./img/micro2.jpg" class="img-thumbnail" id="img2">
+                    <div class="card-body">
+                        <h5 class="card-title" id="text1">Microfono Day/Night</h5>
+                        <p class="card-text" id="text1">$90.000</p>
+                        <form>
+                            <p class="clasificacion">
+                                <input id="radio1" type="radio" name="estrellas" value="5">
+                                <label for="radio1">★</label>
+                                <input id="radio2" type="radio" name="estrellas" value="4">
+                                <label for="radio2">★</label>
+                                <input id="radio3" type="radio" name="estrellas" value="3">
+                                <label for="radio3">★</label>
+                                <input id="radio4" type="radio" name="estrellas" value="2">
+                                <label for="radio4">★</label>
+                                <input id="radio5" type="radio" name="estrellas" value="1">
+                                <label for="radio5">★</label>
+                            </p>
+                        </form>
+
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal7" id="text1">
+                            Ver
+                        </button>
+
+                        <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel7"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="text1">Microfono Day/Night</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="./img/micro2.jpg" class="img-thumbnail" id="img1">
+                                        <p id="text1">Microfono Day/Night</p>
+                                        <p id="text1">$90.000</p>
+                                        <label for="Color">Color</label>
+                                        <select id="Color" name="Color">
+                                            <option value="1">N/Bronce</option>
+                                            <option value="2">N/Plata</option>
+                                            <option value="3">N/Oro</option>
+                                        </select>
+                                        <label for="Cantidad">Cantidad</label>
+                                        <select id="Cantidad" name="Cantidad">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="2">4</option>
+                                            <option value="3">5</option>
+                                        </select>
+                                        <button type="button" class="btn btn-primary" id="text1">Añadir al
+                                            carrito</button>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                            id="text1">Cerrar</button>
+                                        <button type="button" class="btn btn-primary" id="text1">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-2 col-lg-2">
+                <div class="card" style="width: 12rem;">
+                    <img src="./img/micro3.jpg" class="img-thumbnail" id="img2">
+                    <div class="card-body">
+                        <h5 class="card-title" id="text1">Microfono Diadema</h5>
+                        <p class="card-text" id="text1">$65.000</p>
+                        <form>
+                            <p class="clasificacion">
+                                <input id="radio1" type="radio" name="estrellas" value="5">
+                                <label for="radio1">★</label>
+                                <input id="radio2" type="radio" name="estrellas" value="4">
+                                <label for="radio2">★</label>
+                                <input id="radio3" type="radio" name="estrellas" value="3">
+                                <label for="radio3">★</label>
+                                <input id="radio4" type="radio" name="estrellas" value="2">
+                                <label for="radio4">★</label>
+                                <input id="radio5" type="radio" name="estrellas" value="1">
+                                <label for="radio5">★</label>
+                            </p>
+                        </form>
+
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal8" id="text1">
+                            Ver
+                        </button>
+
+                        <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel8"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="text1">Microfono Diadema</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="./img/micro3.jpg" class="img-thumbnail" id="img1">
+                                        <p id="text1">Microfono Diadema</p>
+                                        <p id="text1">$65.000</p>
+                                        <label for="Color">Color</label>
+                                        <select id="Color" name="Color">
+                                            <option value="1">Azul</option>
+                                            <option value="2">Negro</option>
+                                            <option value="3">Blanco</option>
+                                            <option value="3">Gris</option>
+                                        </select>
+                                        <label for="Cantidad">Cantidad</label>
+                                        <select id="Cantidad" name="Cantidad">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="2">4</option>
+                                            <option value="3">5</option>
+                                        </select>
+                                        <button type="button" class="btn btn-primary" id="text1">Añadir al
+                                            carrito</button>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                            id="text1">Cerrar</button>
+                                        <button type="button" class="btn btn-primary" id="text1">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-2 col-lg-2">
+                <div class="card" style="width: 12rem;">
+                    <img src="./img/filtro.jpg" class="img-thumbnail" id="img2">
+                    <div class="card-body">
+                        <h5 class="card-title" id="text1">Filtro Anti-Pop Cabina</h5>
+                        <p class="card-text" id="text1">$180.000</p>
+                        <form>
+                            <p class="clasificacion">
+                                <input id="radio1" type="radio" name="estrellas" value="5">
+                                <label for="radio1">★</label>
+                                <input id="radio2" type="radio" name="estrellas" value="4">
+                                <label for="radio2">★</label>
+                                <input id="radio3" type="radio" name="estrellas" value="3">
+                                <label for="radio3">★</label>
+                                <input id="radio4" type="radio" name="estrellas" value="2">
+                                <label for="radio4">★</label>
+                                <input id="radio5" type="radio" name="estrellas" value="1">
+                                <label for="radio5">★</label>
+                            </p>
+                        </form>
+
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal9" id="text1">
+                            Ver
+                        </button>
+
+                        <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel9"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="text1">Filtro Anti-Pop Cabina</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="./img/filtro.jpg" class="img-thumbnail" id="img1">
+                                        <p id="text1">Filtro Anti-Pop Cabina</p>
+                                        <p id="text1">$180.000</p>
+                                        <label for="Cantidad">Cantidad</label>
+                                        <select id="Cantidad" name="Cantidad">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="2">4</option>
+                                            <option value="3">5</option>
+                                        </select>
+                                        <button type="button" class="btn btn-primary" id="text1">Añadir al
+                                            carrito</button>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                            id="text1">Cerrar</button>
+                                        <button type="button" class="btn btn-primary" id="text1">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-2 col-lg-2">
+                <div class="card" style="width: 12rem;">
+                    <img src="./img/cabinadj.jpg" class="img-thumbnail" id="img2">
+                    <div class="card-body">
+                        <h5 class="card-title" id="text1">Cabina DJ Semi-Profesional</h5>
+                        <p class="card-text" id="text1">$180.000.000</p>
+                        <form>
+                            <p class="clasificacion">
+                                <input id="radio1" type="radio" name="estrellas" value="5">
+                                <label for="radio1">★</label>
+                                <input id="radio2" type="radio" name="estrellas" value="4">
+                                <label for="radio2">★</label>
+                                <input id="radio3" type="radio" name="estrellas" value="3">
+                                <label for="radio3">★</label>
+                                <input id="radio4" type="radio" name="estrellas" value="2">
+                                <label for="radio4">★</label>
+                                <input id="radio5" type="radio" name="estrellas" value="1">
+                                <label for="radio5">★</label>
+                            </p>
+                        </form>
+
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal9" id="text1">
+                            Ver
+                        </button>
+
+                        <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel9"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="text1">Cabina DJ Semi-Profesional</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="./img/cabinadj.jpg" class="img-thumbnail" id="img1">
+                                        <p id="text1">Cabina DJ Semi-Profesional</p>
+                                        <p id="text1">$180.000.000</p>
+                                        <label for="Cantidad">Cantidad</label>
+                                        <select id="Cantidad" name="Cantidad">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="2">4</option>
+                                            <option value="3">5</option>
+                                        </select>
+                                        <button type="button" class="btn btn-primary" id="text1">Añadir al
+                                            carrito</button>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                            id="text1">Cerrar</button>
+                                        <button type="button" class="btn btn-primary" id="text1">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-6 col-md-2 col-lg-2">
+                <div class="card" style="width: 12rem;">
+                    <img src="./img/tocadiscos.jpg" class="img-thumbnail" id="img2">
+                    <div class="card-body">
+                        <h5 class="card-title" id="text1">Toca Discos Mini Kep1er</h5>
+                        <p class="card-text" id="text1">$50.000</p>
+                        <form>
+                            <p class="clasificacion">
+                                <input id="radio1" type="radio" name="estrellas" value="5">
+                                <label for="radio1">★</label>
+                                <input id="radio2" type="radio" name="estrellas" value="4">
+                                <label for="radio2">★</label>
+                                <input id="radio3" type="radio" name="estrellas" value="3">
+                                <label for="radio3">★</label>
+                                <input id="radio4" type="radio" name="estrellas" value="2">
+                                <label for="radio4">★</label>
+                                <input id="radio5" type="radio" name="estrellas" value="1">
+                                <label for="radio5">★</label>
+                            </p>
+                        </form>
+
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal10" id="text1">
+                            Ver
+                        </button>
+
+                        <div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel10"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="text1">Toca Discos Mini Kep1er</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="./img/tocadiscos.jpg" class="img-thumbnail" id="img1">
+                                        <p id="text1">Toca Discos Mini Kep1er</p>
+                                        <p id="text1">$50.000</p>
+                                        <label for="Color">Color</label>
+                                        <select id="Color" name="Color">
+                                            <option value="1">Durazno</option>
+                                            <option value="2">Verde</option>
+                                            <option value="3">Blanco</option>
+                                            <option value="3">Negro</option>
+                                            <option value="3">Rosa</option>
+                                        </select>
+                                        <label for="Cantidad">Cantidad</label>
+                                        <select id="Cantidad" name="Cantidad">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="2">4</option>
+                                            <option value="3">5</option>
+                                        </select>
+                                        <button type="button" class="btn btn-primary" id="text1">Añadir al
+                                            carrito</button>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                            id="text1">Cerrar</button>
+                                        <button type="button" class="btn btn-primary" id="text1">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
